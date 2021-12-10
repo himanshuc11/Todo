@@ -17,6 +17,7 @@ const TodoForm = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         // Create a new Todo
+        props.createTodo(form)
         setForm("")
     }
 
